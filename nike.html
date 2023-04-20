@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Neuro.png">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Neuro</title>
+    <style>
+        html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+    </style>
+</head>
+<body>
+  <header id="navbar">
+    <nav class="navbar-container container">
+      <a href="/" class="home-link">
+        <div id="logo">
+        <img src="Neuro.png" style="width: 20%;">
+    </div>
+      </a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="home.html">Home</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/blog">Rólunk</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="index.html">Termékeink</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/contact">Elérhetőség</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="nike.html">Nike</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/careers">Jordan</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/careers">Yeezy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <script>
+    const navbarToggle = navbar.querySelector("#navbar-toggle");
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+const toggleNavbarVisibility = () => {
+isNavbarExpanded = !isNavbarExpanded;
+navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
+
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);
+</script>
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+      <div class="container">
+        <div class="row">
+         <div class="col-sm">
+           <a href="full.html"> <img  src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/nike-dunk-low-sp-kentucky-2-1000_360x.png?v=1668271028">
+            <p>NIKE DUNK LOW SP KENTUCKY</p>
+         
+            <p>44.490 ft</p>
+        </a>
+          </div>
+          <div class="col-sm">
+          <a href="full1.html"><img src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/nike-dunk-low-sp-syracuse-2-1000_360x.png?v=1668271158">
+           <p>NIKE DUNK LOW SP SYRACUSE</p>
+           <p>44.490 ft</p>
+        </a> 
+          </div>
+
+
+
+
+          <div class="col-sm">
+           <a href="full2.html"> <img src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/nike-dunk-low-team-red-2-1000_360x.png?v=1673377605">
+             <p>NIKE DUNK LOW TEAM RED</p>
+             <p>44.490 ft</p></a> 
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <a href="full3.html">
+            <img  src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/image_9dffe850-aa76-438e-8de5-81922f5c6675_360x.png?v=1635198874">
+            <p>NIKE AIR FORCE 1 07 TRIPLE WHITE</p>
+        <p>36.950 ft</p>
+        
+        </a>
+          </div>
+         
+          <div class="col-sm">
+         <a href="full4.html">
+            <img src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/image_546a0321-edbe-49cc-b590-20c434d439a6_360x.png?v=1639582880">
+           <p>NIKE DUNK LOW RETRO WHITE BLACK</p>
+           <p>44.490 ft</p>
+        </a>
+          </div>
+          <div class="col-sm">
+            <a href="full5.html">
+            <img src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/image_4f16e63b-7f3f-4019-88aa-677966126644_360x.png?v=1639829553">
+             <p>NIKE AIR FORCE 1 LOW SUPREME WHITE</p>
+            <p>44.490 ft</p>
+            </a> 
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+          
+      <a href="full6.html">    
+        <img  src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/image_b24d3f78-1ed1-420c-a170-557fa4aec8f7_360x.png?v=1648216462">
+            <p>AIR JORDAN 1 MID SE SIGNAL </p>
+          <p>54.990 ft</p>
+          </a>
+          </div>
+
+
+
+
+
+
+          <div class="col-sm">
+            <a href="full7.html">
+           <img src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/image_4b0c8010-7c11-4a39-b4a9-a49f555ddb3b_360x.png?v=1647609207">
+           <p>AIR JORDAN 1 MID BARCELONA SWEATER </p>
+           <p>54.990 ft</p>
+       
+          </a>
+          </div>
+          <div class="col-sm">
+
+
+
+
+            <a href="full8.html">
+             <img src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/image_9d2f4dc6-22f8-4833-a0de-832bf97579ad_360x.png?v=1675354639">
+        
+             <p>AIR JORDAN 1 MID WHITE METALLIC GOLD</p>
+          
+
+             <p>54.990 ft</p>
+            </a>
+
+            </div>
+
+
+
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-sm">
+            <a href="full9.html">
+            <img  src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/image_a2f723e8-6c82-4f92-ae20-90657328eb12_360x.png?v=1639597720">
+            <p>AIR JORDAN 1 MID CARBON FIBER</p>
+
+            <p>54.990 ft</p>
+
+          </a>
+          </div>
+          <div class="col-sm">
+
+
+
+            <a href="full10.html">
+            <img  src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/image_d012dda3-425d-4dd7-8b4d-7450907369cd_360x.jpg?v=1646603156">
+            <p>AIR JORDAN 1 MID SONICS</p>
+
+            <p>54.990 ft</p>
+          </a>
+          </div>
+          
+          <div class="col-sm">
+            <a href="full11.html">
+             <img src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/nike-air-force-1-low-purple-skeleton-2-1000_360x.png?v=1673376943">
+             <p>NIKE AIR FORCE 1 LOW PURPLE SKELETON</p>
+             <p>44.990 ft</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+       
+      
+        </div>
+      </div>
+      <body class="d-flex flex-column">   <div id="page-content">     <div class="container text-center">       <div class="row justify-content-center">         <div class="col-md-7">           <h1 class="fw-light mt-4 text-white"></h1>           <p class="lead text-white-50"></p>         </div>       </div>     </div>   </div>   <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-black text-white">     <div class="container text-center"  >       <small>Copyright &copy; Neuro</small>       <small>|</small>       <small  >+36202462052</small>     </div>   </footer> </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

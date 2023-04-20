@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuro</title>
+<link rel="icon" href="https://media.discordapp.net/attachments/1012658475492442203/1097497722296217610/IMG_1372.PNG?width=901&height=676">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+<style>
+
+body{
+  margin: 0;
+}
+#kep{
+width: 5%;
+
+}
+#kep img{
+
+width: 100%;
+}
+@media only screen and (max-width: 950px) {
+    #kep img {
+      width: 150%;
+      transition: 200ms;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    #kep img {
+      width: 200%;
+      transition: 200ms;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    #kep img {
+      width: 250%;
+      transition: 200ms;
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    #kep img {
+      width: 400%;
+      transition: 200ms;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #kep img {
+      width: 300%;
+      transition: 200ms;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    #kep img {
+      width: 500%;
+      transition: 200ms;
+    }
+  }
+
+
+body{
+    margin: 0;
+}
+
+
+
+.burko:hover{
+    transition: 400ms;
+    border-radius: 10px;
+    border-color: goldenrod;
+}
+.leiras{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+:root {
+    --navbar-bg-color: hsl(0, 0%, 15%);
+    --navbar-text-color: hsl(0, 0%, 85%);
+    --navbar-text-color-focus: white;
+    --navbar-bg-contrast: hsl(0, 0%, 25%);
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+  }
+  .container {
+
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+  #navbar {
+    --navbar-height: 64px;
+    width: 100%;
+    position: fixed;
+    height: var(--navbar-height);
+   background-color: #f9f9f9;
+    left: 0;
+    right: 0;
+  }
+  .navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
+  .navbar-item {
+    margin: 0.4em;
+    width: 100%;
+  }
+  
+  .home-link,
+  .navbar-link {
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+  }
+  
+  .home-link:is(:focus, :hover) {
+    color: var(--navbar-text-color-focus);
+  }
+  
+  .navbar-link {
+    justify-content: center;
+    width: 100%;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+  }
+  
+  .navbar-link:is(:focus, :hover) {
+    color: var(--navbar-text-color-focus);
+    background-color: var(--navbar-bg-contrast);
+  }
+  .navbar-logo {
+    background-color: var(--navbar-text-color-focus);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5em;
+  }
+
+  #navbar-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    background-color: #1c1c1c;
+  }
+  #navbar-toggle:is(:focus, :hover) .icon-bar {
+   background-color: #1c1c1c;
+  }
+  #navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
+    position: absolute;
+    margin: 0;
+    width: 30px;
+  }
+  #navbar-toggle[aria-expanded="true"] .icon-bar:first-child {
+    transform: rotate(45deg);
+  }
+  #navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
+    opacity: 0;
+  }
+  #navbar-toggle[aria-expanded="true"] .icon-bar:last-child {
+    transform: rotate(-45deg);
+  }
+  #navbar-menu {
+    position: fixed;
+    top: var(--navbar-height);
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+    
+  }
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu {
+    background-color: #f9f9f9;
+    opacity: 1;
+    visibility: visible;
+  }
+  .navbar-links {
+    list-style: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 1.4rem;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
+    padding: 1em;
+  }
+  @media screen and (min-width: 1000px) {
+    #navbar-toggle,
+    #navbar-toggle[aria-expanded="true"] {
+      display: none;
+    }
+  
+    #navbar-menu,
+    #navbar-toggle[aria-expanded="true"] #navbar-menu {
+      visibility: visible;
+      opacity: 1;
+      position: static;
+      display: block;
+      height: 100%;
+     
+    }
+  
+    .navbar-links,
+    #navbar-toggle[aria-expanded="true"] #navbar-menu .navbar-links {
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      position: static;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    #logo{
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    #logo{
+      width: 70%;
+    }
+  }
+    @media only screen and (max-width: 400px) {
+        #logo{
+          width: 100%;
+        }
+      }
+        @media only screen and (max-width: 300px) {
+            #logo{
+              width: 110%;
+            }
+          }
+
+
+
+
+</style>
+
+</head>
+<body>
+ 
+  <header id="navbar">
+    <nav class="navbar-container container">
+      <a href="/" class="home-link">
+        <div id="logo">
+        <img src="Neuro.png" style="width: 20%;">
+    </div>
+      </a>
+      <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="home.html">Home</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/blog">Rólunk</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/careers">Termékeink</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/contact">Elérhetőség</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/careers">Nike</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/careers">Jordan</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="/careers">Yeezy</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <script>
+    const navbarToggle = navbar.querySelector("#navbar-toggle");
+const navbarMenu = document.querySelector("#navbar-menu");
+const navbarLinksContainer = navbarMenu.querySelector(".navbar-links");
+let isNavbarExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
+
+const toggleNavbarVisibility = () => {
+isNavbarExpanded = !isNavbarExpanded;
+navbarToggle.setAttribute("aria-expanded", isNavbarExpanded);
+};
+
+navbarToggle.addEventListener("click", toggleNavbarVisibility);
+
+navbarLinksContainer.addEventListener("click", (e) => e.stopPropagation());
+navbarMenu.addEventListener("click", toggleNavbarVisibility);
+</script>
+
+
+
+
+
+
+
+
+
+            <div class="container">
+                <div class="row" style="text-align: center;margin-top: 10.5%;" >
+                  <div class="col-sm">
+                   
+                 
+                    <div class="ecommerce-gallery" data-mdb-zoom-effect="true" data-mdb-auto-height="true">
+                      <div class="row py-3 shadow-5">
+                        <div class="col-12 mb-1">
+                          <div class="lightbox">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/nike-dunk-low-team-red-1-1000_750x.png.jpg?v=1648716500"
+                              alt="Gallery image 1"
+                              class="ecommerce-gallery-main-img active w-100"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-3 mt-1">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/nike-dunk-low-team-red-2-1000_750x.png.jpg?v=1648716500"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/14a.webp"
+                            alt="Gallery image 1"
+                            class="active w-100"
+                          />
+                        </div>
+                        <div class="col-3 mt-1">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/nike-dunk-low-team-red-3-1000_360x.png.jpg?v=1648716501"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
+                            alt="Gallery image 2"
+                            class="w-100"
+                          />
+                        </div>
+                        <div class="col-3 mt-1">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/nike-dunk-low-team-red-5-1000_360x.png.jpg?v=1648716500"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13a.webp"
+                            alt="Gallery image 3"
+                            class="w-100"
+                          />
+                        </div>
+                        <div class="col-3 mt-1">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0515/4272/0676/products/nike-dunk-low-team-red-4-1000_360x.png.jpg?v=1648716501"
+                            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/15a.webp"
+                            alt="Gallery image 4"
+                            class="w-100"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                  
+                  <div class="col-sm">
+                
+                    <h2>NIKE DUNK LOW SP SYRACUSE</h2>
+                    <br>
+                    <strong><p>44.490 ft</p></strong>
+                    <br>
+             <a href="form.html" ><input type="submit" style="color: black; border-style: solid;background-color: white;padding: 5px 10% 5px 10%;"  value="Kosárba" class="burko" href="eladas.html" ></a><br>
+                    <br>
+                    <p class="leiras" >Kérjük a rendelni kívánt méretet a kosárhoz adás után a megjegyzéshez írják be.
+                        A pontos méretezésről bővebb információt talál a mérettáblázat menüben.</p>
+    
+                        <p class="leiras" >A termékeink csak rendelésre elérhetőek!
+                            A kínálatunkból bármelyik cipő megrendelhető, azonban nem tudjuk garantálni, hogy mindegyik termék elérhető az összes méretben. Előfordulhat, hogy a forgalmazónál esetleges készlethiány alakul ki, ebben az esetben lehetőség van másik cipőt választani, vagy természetesen visszatéríthetjük a teljes vételárat is.
+                            Utánvétre és személyes átvételre nincs lehetőség.
+
+                            Cserét biztosítunk:
+                            
+                            Hibás termék
+                            Nem kért modell
+                            Nem kért szín
+                            Mérethiba esetén
+                            Bármilyen kérdés vagy probléma esetén nyugodtan keressen minket az elérhetőségeink valamelyikén.</p>
+
+                  </div>
+                  </div>
+                </div>
+
+
+
+                  <body class="d-flex flex-column">
+                    <div id="page-content">
+                      <div class="container text-center">
+                        <div class="row justify-content-center">
+                          <div class="col-md-7">
+                            <h1 class="fw-light mt-4 text-white"></h1>
+                            <p class="lead text-white-50"></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-black text-white">
+                      <div class="container text-center"  >
+                        <small>Copyright &copy; Neuro</small>
+                        <small>|</small>
+                        <small  >+36202462052</small>
+                      </div>
+                    </footer>
+                  </body>
+                  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
